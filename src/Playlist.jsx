@@ -7,8 +7,8 @@ export default function Playlist() {
     <div className="mt-8 text-center">
       {/* Placeholder mientras carga */}
       {!loaded && (
-        <div className="animate-pulse text-coffee/70 font-serif">
-          🌸 Cargando...
+        <div className="w-full h-[450px] flex items-center justify-center bg-coffee/10 rounded-lg animate-pulse">
+          <p className="text-coffee/70 font-serif">🌸 Cargando playlist...</p>
         </div>
       )}
 
@@ -23,9 +23,11 @@ export default function Playlist() {
           maxWidth: "660px",
           overflow: "hidden",
           background: "transparent",
+          borderRadius: "12px",
         }}
         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation"
         src="https://embed.music.apple.com/mx/playlist/pl.u-MDAWk9NIA5KgRM3"
+        loading="eager" 
       ></iframe>
     </div>
   );
