@@ -16,7 +16,6 @@ export default function Poem() {
     "Tu mirada me vuelve realista",
     "Trabajar la fantasía de momentos",
     "No necesariamente perfectos."
-
   ];
 
   return (
@@ -25,7 +24,7 @@ export default function Poem() {
         <p
           key={i}
           className="opacity-0 animate-fadeIn"
-          style={{ animationDelay: `${i * 1.5}s` }}
+          style={{ animationDelay: `${2.5 + i * 2.5}s` }} // delay inicial + intervalo
         >
           {line}
         </p>
